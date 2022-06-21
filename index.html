@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>E&O apps in the browser</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <style>
+      .interactive {
+	  height: 500px;
+	  width: 100%;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section class="title">
+
+	  <h3>Education and Outreach Applications in the Browser</h3>
+
+	  <div>
+            <p>Tom McCauley</p>
+	    <p>
+	      <a href="https://github.com/tpmccauley" target="_blank">thomas.mccauley@cern.ch</a>
+	    </p>
+            <p>University of Notre Dame, USA</p>
+	    <p>
+	      24 Jun 2022, CERN
+	    </p>
+	    <p>    
+          </div>
+	</section>
+
+	<section>
+	  <h2>Introduction</h2>
+	  <ul>
+	    <li>
+	    <li>
+	    <li>
+	  </ul>
+	</section>
+	
+	<section>
+	  <h2>Software</h2>
+	  <ul>
+	    <li>
+	    <li>
+	    <li>
+	      <a href="https://threejs.org" target="_blank">three.js</a>:
+	      "a cross-browser JavaScript library and application programming interface used to create and display
+	      animated 3D computer graphics in a web browser using WebGL"
+	      - <a href="https://en.wikipedia.org/wiki/Three.js" target="_blank"> Wikipedia</a>
+	    </li>
+	  </ul>
+	</section>
+
+	<section>
+	  
+	  <section>
+	    <h2>CMS Panoramic</h2>
+	    <ul>
+	      <li>
+		Idea: with A-Frame use the 360 deg panoramic images <a href="https://cds.cern.ch/record/2252595" target="_blank">available on CDS</a>
+	      </li>
+	      <li>
+		<a href="https://aframe.io/" target="_frame">A-Frame</a>: "A web framework for building 3D/AR/VR experiences"
+	      </li>
+	    </ul>
+	  </section>
+
+	  <section>
+	    <img src="img/CMS_equirectangular_16384.jpg">
+	  </section>
+	  
+	  <section>
+	    <a href="https://cern.ch/cms-aframe" data-preview-link>
+	      <img src="./img/cms-aframe.png"></img>
+	    </a> 
+	  </section>  
+
+	  <section>
+	    <p>
+	      See also:
+	    </p>
+	    <ul>
+	      <li><a href="https://heppanoramic.github.io/protodune-aframe/" data-preview-link>ProtoDUNE</a></li>
+	      <li><a href="https://tpmccauley.github.io/sesame-aframe/" data-preview-link>SESAME</a></li>
+	    </ul>
+	  </section>
+	  
+	</section>
+		  
+	<section>
+
+	  <section>
+	    <h2>CMS Detector</h2>
+	    <ul>
+	      <li>
+	      <li>
+	      <li>
+	    </ul>
+	  </section>
+
+	  <!--
+	  <section>
+	    <iframe class="interactive" data-src="https://cms3d.web.cern.ch/detector/" data-preload></iframe>
+	  </section>
+	  -->	    
+	  <section data-background-iframe="https://cms3d.web.cern.ch/detector/"
+		   data-background-interactive data-preload>
+	  </section>
+	
+	</section>
+
+	<section>
+	  <section>
+	    <h2>iSpy WebGL</h2>
+	  </section>
+	  <section>
+	    <a href="https://cern.ch/ispy-webgl" data-preview-link>
+	      <img src="./img/ispy-webgl.png"></img>
+	    </a>
+	  </section>
+	</section>
+
+	<section>
+
+	  <section>
+	    <h2>Interactive event display</h2>
+	    <ul>
+	      <li>Idea: export the 3D scene from iSpy WebGL for an event and use in an application</li>
+	      <li>
+	    </ul>
+	  </section>
+	  
+	  <section>
+	    <iframe class="interactive" data-src="https://cms3d.web.cern.ch/HIG-21-013/" data-preload></iframe>
+	  </section>
+	  
+	</section>
+
+	<section>
+	  <section>
+	    <h2>CMS AR</h2>
+	    <ul>
+	      <li>
+	      <li>
+	    </ul>
+	  </section>
+
+	  <section>
+	    <img src="img/Screenshot_20220621-170640.png" width="300">
+	  </section>
+	  <section>
+	    <img src="img/Screenshot_20220621-172902.png" width="300">
+	  </section>
+	  <section>
+	    <img src="img/Screenshot_20220621-170651.png" width="300">
+	  </section>
+	  <section>
+	    <img src="img/Screenshot_20220621-171219.png" width="300">
+	  </section>
+	  <section>
+	    <img src="img/Screenshot_20210919-170318.png" width="300">
+	  </section>
+
+	</section>
+	
+	<section>
+	  <h2>Links</h2>
+	  <ul>
+	    <li>
+	      CMS Panoramic:
+	      <a href="https://cern.ch/cms-aframe" target="_blank">application</a>,
+	      <a href="https://github.com/HEPPanoramic/cms-aframe" target="_blank">code</a>
+	    </li>
+	    <li>
+	      CMS Detector:
+	      <a href="https://cms3d.web.cern.ch/detector" target="_blank">application</a>,
+	      <a href="https://gitlab.cern.ch/cms-comms/3d-assets/detector">code</a>
+	    </li>
+	    <li>
+	      iSpy WebGL:
+	      <a href="https://cern.ch/ispy-webgl" target="_blank">application</a>,
+	      <a href="https://github.com/cms-outreach/ispy-webgl" target="_blank">code</a>
+	    </li>
+	    <li>
+	      Interactive event displays:
+	      <a href="https://cms3d.web.cern.ch/HIG-21-013/" target="_blank">example application</a>,
+	      <a href="https://gitlab.cern.ch/cms-comms/3d-assets/workflow" target="_blank">template code</a>
+	    </li>
+	    <li>
+	      CMS AR:
+	      <a href="https://cms3d.web.cern.ch/ar-test/" target="_blank">application</a>,
+	      <a href="https://gitlab.cern.ch/cms-comms/3d-assets/ar-test">code</a>
+	    </li>
+	  
+	
+	  </ul>
+	</section>
+
+	
+	
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+	  hash: true,
+	  
+	  // Learn about plugins: https://revealjs.com/plugins/
+	  plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
