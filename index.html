@@ -31,7 +31,10 @@
 	  <div>
             <p>Tom McCauley</p>
 	    <p>
-	      <a href="https://github.com/tpmccauley" target="_blank">thomas.mccauley@cern.ch</a>
+	      <a href="https://phonebook.cern.ch/search?q=Mc+Cauley" target="_blank">thomas.mccauley@cern.ch</a>
+	    </p>
+	    <p>
+	      <a href="https://twitter.com/tpmccauley" target="_blank">@tpmccauley</a>
 	    </p>
             <p>University of Notre Dame, USA</p>
 	    <p>
@@ -42,60 +45,82 @@
 	</section>
 
 	<section>
-	  <h2>Introduction</h2>
+	  <h2>
+	    <a href="https://www.goodreads.com/quotes/1185-those-are-my-principles-and-if-you-don-t-like-them-well" targte="_blank">
+	      "Principles"
+	    </a>
+	  </h2>
 	  <ul>
-	    <li>
-	    <li>
-	    <li>
+	    <li>Make the application easy to distribute: use the browser
+	    <li>Keep in mind that the intended users and audience are the (mostly) the general public: keep things as simple and as clear as possible
+	    <li>Open source: you never know from where your collaborators will come so be open 
+	    <li>Try to make life easy for the developer(s): use simple tools (game engines are nice but there are learning curves)
 	  </ul>
+	</section>
+	  
 	</section>
 	
 	<section>
 	  <h2>Software</h2>
-	  <ul>
-	    <li>
-	    <li>
-	    <li>
-	      <a href="https://threejs.org" target="_blank">three.js</a>:
-	      "a cross-browser JavaScript library and application programming interface used to create and display
-	      animated 3D computer graphics in a web browser using WebGL"
-	      - <a href="https://en.wikipedia.org/wiki/Three.js" target="_blank"> Wikipedia</a>
-	    </li>
-	  </ul>
+	  <p>
+	    All of the applications described here use 
+	    <a href="https://threejs.org" target="_blank">three.js</a>,
+	    "a cross-browser JavaScript library and application programming interface used to create and display
+	    animated 3D computer graphics in a web browser using WebGL"<a href="https://en.wikipedia.org/wiki/Three.js" target="_blank">*</a>
+	    and several use <a href="https://aframe.io/" target="_frame">A-Frame</a>, "a web framework for building 3D/AR/VR experiences".
+	  </p>
+	  <p>
+	    All you really need is JavaScript, HTML, and CSS. 
+	  </p>
 	</section>
 
+	<section>
+	  <h2>Caveat emptor</h2>
+	  <p>
+	    There is a long to-do list associated to each of these applications so there are many possible features to add (and bugs to fix).
+	    Each of them I would consider at least "minimum-viable-products" (some more than that  as e.g. iSpy WebGL has been around since 2014).
+	  </p>
+	  <p>
+	    Also, "your mileage may vary" in terms of browser support for some features, especially for some combinations of OS and browsers.
+	  </p>
+	</section>
+	
 	<section>
 	  
 	  <section>
 	    <h2>CMS Panoramic</h2>
-	    <ul>
-	      <li>
-		Idea: with A-Frame use the 360 deg panoramic images <a href="https://cds.cern.ch/record/2252595" target="_blank">available on CDS</a>
-	      </li>
-	      <li>
-		<a href="https://aframe.io/" target="_frame">A-Frame</a>: "A web framework for building 3D/AR/VR experiences"
-	      </li>
-	    </ul>
+	    <p>
+	      Idea: With A-Frame use the 360 deg panoramic images available on CDS (like <a href="https://cds.cern.ch/record/2252595" target="_blank">these</a>)
+	      to make an application to explore CMS and the LHC.
+	    </p>
+	    <p>
+	      Usage: As a stand-alone application in the desktop or even better in a tablet or mobile as (in-principle) the view changes as you move the device.
+	      There is even a possibilty for stereo VR viewing with the right equipment. You can also embed it in a page.
+	    </p>
 	  </section>
 
 	  <section>
+	    <p>Turn something like this...</p>
 	    <img src="img/CMS_equirectangular_16384.jpg">
 	  </section>
 	  
 	  <section>
+	    <p>...into something like this</p>
 	    <a href="https://cern.ch/cms-aframe" data-preview-link>
 	      <img src="./img/cms-aframe.png"></img>
 	    </a> 
-	  </section>  
+	  </section>
 
 	  <section>
 	    <p>
 	      See also:
 	    </p>
-	    <ul>
-	      <li><a href="https://heppanoramic.github.io/protodune-aframe/" data-preview-link>ProtoDUNE</a></li>
-	      <li><a href="https://tpmccauley.github.io/sesame-aframe/" data-preview-link>SESAME</a></li>
-	    </ul>
+	    <a href="https://heppanoramic.github.io/protodune-aframe/" data-preview-link>
+	      <img src="./img/protodune.png" width="500"></img>
+	    </a>
+	    <a href="https://tpmccauley.github.io/sesame-aframe/" data-preview-link>
+	      <img src="./img/sesame.png" width="500"></img>
+	    </a>
 	  </section>
 	  
 	</section>
@@ -104,11 +129,17 @@
 
 	  <section>
 	    <h2>CMS Detector</h2>
-	    <ul>
-	      <li>
-	      <li>
-	      <li>
-	    </ul>
+	    <p>
+	      Idea: Use the detailed 3D model of CMS made using
+	      <a href="https://twiki.cern.ch/twiki/bin/view/CMSPublic/SketchUpCMS#8_Projects_using_SketchUpCMS" target="_blank">
+		SketchUp</a> and three.js to make an interactive 3D application (with annotations).
+	    </p>
+	    <p>
+	      Usage: A handy interactive version of the well-known
+	      <a href="https://cms-docdb.cern.ch/cgi-bin/PublicDocDB/RetrieveFile?docid=11514&filename=cms_160312_02.png&version=3" target="_blank">
+		image of CMS.
+	      </a>
+	    </p>
 	  </section>
 
 	  <!--
@@ -125,6 +156,11 @@
 	<section>
 	  <section>
 	    <h2>iSpy WebGL</h2>
+	    <p>
+	      Idea: Use three.js to make an event display that runs completely client-side in the browser.
+	    </p>
+	    <p>
+	      Usage: CMS masterclasses, public event displays, animations, and 3D files.
 	  </section>
 	  <section>
 	    <a href="https://cern.ch/ispy-webgl" data-preview-link>
@@ -134,17 +170,18 @@
 	</section>
 
 	<section>
-
+	 
 	  <section>
 	    <h2>Interactive event display</h2>
-	    <ul>
-	      <li>Idea: export the 3D scene from iSpy WebGL for an event and use in an application</li>
-	      <li>
-	    </ul>
+	    <p>
+	      Idea: export the 3D scene from iSpy WebGL for an event and make it available interactively in the browser.
+	    </p>
+	    <p>
+	      Usage: physics briefings
 	  </section>
 	  
 	  <section>
-	    <iframe class="interactive" data-src="https://cms3d.web.cern.ch/HIG-21-013/" data-preload></iframe>
+	    <iframe class="interactive" data-src="https://cms3d.web.cern.ch/HIG-20-003/" data-preload></iframe>
 	  </section>
 	  
 	</section>
@@ -152,10 +189,12 @@
 	<section>
 	  <section>
 	    <h2>CMS AR</h2>
-	    <ul>
-	      <li>
-	      <li>
-	    </ul>
+	    <p>
+	      Idea: use A-Frame to make an AR application in the (mobile) browser using 3D models from CMS.
+	    </p>
+	    <p>
+	      Usage: see CMS from a different perspective as a model right in front of you.
+	    </p>
 	  </section>
 
 	  <section>
@@ -174,6 +213,15 @@
 	    <img src="img/Screenshot_20210919-170318.png" width="300">
 	  </section>
 
+	  <section>
+	    <p>Still in the workshop: how does Google's <code><a href="https://modelviewer.dev/">model-viewer</a></code> component work?</p>
+	    <p>
+	      <a href="http://cms3d.web.cern.ch/sandbox/model-viewer.html" data-preview-link data-preload>
+		<img src="img/model-viewer.png" height="300"></img>
+	      </a>
+	    </p>
+	  </section>
+	  
 	</section>
 	
 	<section>
@@ -204,13 +252,53 @@
 	      <a href="https://cms3d.web.cern.ch/ar-test/" target="_blank">application</a>,
 	      <a href="https://gitlab.cern.ch/cms-comms/3d-assets/ar-test">code</a>
 	    </li>
-	  
-	
 	  </ul>
 	</section>
 
+	<section>
+
+	  <section>
+	    <h2>Other projects</h2>
+	    <p>
+	      See also:
+	    </p>
+	    <ul>
+	      <li><a href="https://lhc-panoramas.web.cern.ch/lhc-panoramas/">LHC Panoramas</a>: an "ecumenical" application similar to CMS Panoramas that
+		combines views of CMS and ATLAS
+	      </li>
+	      <li><a href="http://ipsos.web.cern.ch/" data-preview-link>IPSOS</a>: a sonification application developed in collaboration with the
+		<a href="https://www.birmingham.ac.uk/facilities/ea-studios/research/beer.aspx">Birmingham Ensemble for Electroacoutic Research</a>
+	      </li>
+	    </ul>
+	  </section>
+	  <section>
+	    <ul>
+	      <li>
+		<a href="https://opal-masterclass.web.cern.ch/" data-preview-link>OPAL masterclass</a>: a re-working and revitalization of the original OPAL masterclass
+	      </li>
+	      <li>
+		<a href="https://cms-masterclass.web.cern.ch/" data-preview-link>CMS masterclass</a> (a work-in-progress): a stand-alone masterclass using CMS public data, interactive event displays, and some other ideas shown here
+	      </li>
+	    </ul>
+	    <p>Note: these are mostly python-based applications using <a href="https://flask.palletsprojects.com/en/2.1.x/" target="_blank">Flask</a></p>
+	  </section>
+	</section>
 	
-	
+	<section>
+	  <p>
+	    Acknowledgements and thanks to
+	    <a href="https://github.com/TaiSakuma">@TaiSakuma</a>,
+	    <a href="https://twitter.com/AdaRoseCannon">@AdaRoseCannon</a>,
+	    <a href="https://twitter.com/RaoOfPhysics">@RaoOfPhysics</a>,
+	    G. Eulisse, P. Nguyen, M. Hategan, M. Brice, QuarkNet, CMS Communications,
+	    and the CMS Data Preservation and Open Access group for material, inspiration,
+	    and collaboration.
+	  </p>
+	  <p>
+	    Want to contribute? Please get in touch.
+	  </p>
+	</section>
+
       </div>
     </div>
 
